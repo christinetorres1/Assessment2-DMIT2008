@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Link} from 'react-router-dom'
+import {Link, useNav} from 'react-router-dom'
 
 // import { useNavigate } from "react-router-dom";
 
@@ -16,15 +16,32 @@ import {Link} from 'react-router-dom'
 // import { LoginPageStyles, FormControl } from "./styles";
 
 function LoginPage(props) {
+    
+    const nav = useNav();
+
+    function onSignInHandler(e) {
+        e.preventDefault();
+
+        const isValidUser = true;
+
+        if (isValidUser) {
+            nav("/dashboard");
+        }
+    }
+    
     return(
-        <header> 
-            <h1>LogIn Page</h1>
-        <ul>
-            <li>
-                <Link to="/dashboard">Dashboard</Link>
-            </li>
-        </ul>
-        </header>
+        <LoginPageStyles> 
+
+            <LoginPageLeft>
+                <h1>Chocolate store</h1>
+                
+            </LoginPageLeft>
+            <LoginPageRight>
+
+                <Link to="/dashboard">LogIn</Link>
+            </LoginPageRight>
+
+        </LoginPageStyles>
 
 
 
