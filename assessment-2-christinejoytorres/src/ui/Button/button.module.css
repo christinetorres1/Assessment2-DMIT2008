@@ -1,0 +1,21 @@
+:root {
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #334155;
+    --orange-500:#f59e0b;
+    --red-500:#ef4444;
+    --lime-500:#84cc16;
+    --blue-500:#3b82f6;
+    --rose-500:#f43f5e;
+}
+
+.default {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 2px 0 var(--slate-400);
+    color: grey;
+    border-radius: 3px;
+    margin: 1rem;
+    font-size: 1rem;
+}
