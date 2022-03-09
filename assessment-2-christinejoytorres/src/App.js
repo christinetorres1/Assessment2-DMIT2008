@@ -1,12 +1,18 @@
-import Button from "./ui/Button/Button";
+import { Routes, Route} from 'react-router-dom'
+
+import {LoginPage, DashBoardPage, PageNotFound} from './pages'
 
 function App() {
   return (
-          <header>
-            <h1>Chocolate Store</h1>
+      <>
+      <Routes>
+        <Route path="/" element={<LoginPage/>}/>
+        <Route path="/dashboard" element={<DashBoardPage/>}/>
+        <Route path="*" element={<PageNotFound/>}/>
 
-            <Button label="default" variant="default"/>
-          </header>
+      </Routes>
+
+      </>
   );
 }
 
