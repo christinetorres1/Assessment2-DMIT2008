@@ -4,11 +4,13 @@ import { IoMailOutline, IoNotificationsOutline, IoSettingsOutline } from "react-
 
 import {AppBarStyles, AppBarItem, AppBarItems, AppBarItemGroup} from './styles'
 
+import { GiChocolateBar } from "react-icons/gi";
+
 function AppBar (props) {
     return (
         <AppBarStyles>
             <AppBarItems>
-                <AppBarItem>Chocolate Store</AppBarItem>
+                <AppBarItem><GiChocolateBar/> Chocolate Store</AppBarItem>
                 <AppBarItemGroup>
                     <span><IoMailOutline/></span>
                     <span><IoNotificationsOutline /></span>

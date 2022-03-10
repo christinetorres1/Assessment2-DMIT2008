@@ -1,12 +1,13 @@
 import React from "react";
-import styles from './button.module.css'
+
+import {ButtonStyles} from './styles'
 
 function Button ({text, ...props}) {
 
     return (
-        <button {...props}>
+        <ButtonStyles {...props}>
             {text}
-        </button>
+        </ButtonStyles>
     );
 }
 

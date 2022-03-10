@@ -1,23 +1,15 @@
 import React from "react";
 
-import {Link, useNav} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
+import Button from "../../ui/button/Button";
 
-// import { useNavigate } from "react-router-dom";
+import { GiChocolateBar } from "react-icons/gi";
 
-// import {BiMessageSquareError} from 'react-icons/bi'
-// import {signInWithEmailAndPassword} from "firebase/auth"
-// import {ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-
-// import {auth} from 'libs/firebase'
-// import { Label } from "ui/forms";
-// import { Input } from "ui/forms";
-// import { SubmitButton } from "ui/buttons";
-// import { LoginPageStyles, FormControl } from "./styles";
+import { LoginPageStyles, LoginPageContainer, FormInput, FormLabel, InputControl, LoginPageForm, LoginPageLeft, LoginPageRight } from "./styles";
 
 function LoginPage(props) {
     
-    const nav = useNav();
+    const nav = useNavigate();
 
     function onSignInHandler(e) {
         e.preventDefault();
@@ -29,21 +21,38 @@ function LoginPage(props) {
         }
     }
     
-    return(
-        <LoginPageStyles> 
+    return (
+        <>
+            <LoginPageStyles> 
+                <LoginPageContainer>
+                    <LoginPageLeft bgImg="banner">
 
-            <LoginPageLeft>
-                <h1>Chocolate store</h1>
-                
-            </LoginPageLeft>
-            <LoginPageRight>
+                        <h1>Chocolate store</h1>  
+                        <p>Canada's chocolatier since 2022</p>
+                        <p><GiChocolateBar/></p>
+                        
+                    </LoginPageLeft>
+                    <LoginPageRight>
+                        <LoginPageForm onSubmit={onSignInHandler}>
 
-                <Link to="/dashboard">LogIn</Link>
-            </LoginPageRight>
-
-        </LoginPageStyles>
-
-
+                            <h2>Sign In</h2>
+                            <InputControl>
+                                <FormLabel>Email</FormLabel>
+                                <FormInput type="Email" id="userEmail" name="userEmail"/>
+                            </InputControl>
+                            <InputControl>
+                                <FormLabel>Password</FormLabel>
+                                <FormInput type="password" id="userPassword" name="userPassword"/>
+                            </InputControl>
+                            <Button text="Sign In" />
+                        
+                        </LoginPageForm>
+                    </LoginPageRight>
+                </LoginPageContainer>
+    
+            </LoginPageStyles>
+        
+        </>
 
     )
   }
