@@ -4,9 +4,10 @@ const PageNotFoundStyles = styled.body`
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: left;
-    background-color: #F3C5C5;
+    align-items: center;
+    background-color: #FAEEE0;
     height: 100vh;
+    color: #694E4E;
 `;
 
 const PageNotFoundNote = styled.p `

@@ -14,25 +14,18 @@ const LoginPageRight = styled.div `
     background-color: #FFEDDB;
     height: 25rem;
     width: 100%;
-
-    h2 {
-        font-size: 2rem;
-    }
+    display: flex;
+    justify-content: center;
 `;
 
 const LoginPageLeft = styled.div `
-    
+    text-align: center;
     width: 100%;
     background-color: #EDCDBB;
     height: 25rem;
-    padding-left: 1.5rem;
     padding-top: 7rem;
     
     h1 {
-        display: flex;
-        
-
-        
         font-size: 2.5rem;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -40,7 +33,7 @@ const LoginPageLeft = styled.div `
     p {
         font-family: 'Brush Script MT', cursive;
         font-size: 1.5rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     p:last-child {
@@ -61,12 +54,20 @@ const LoginPageContainer = styled.div `
 `;
 
 const LoginPageForm = styled.form `
-    display: flex;
     width: 15rem;
-    flex-wrap: wrap;
-    padding: 4rem 2rem;
-    margin: auto 0;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
 
+    p {
+        padding: 0.5rem 0 0 0;
+        font-style: italic;
+    
+    }
 `;
 
 const InputControl = styled.div `
@@ -78,8 +79,10 @@ const FormLabel = styled.label `
 `;
 
 const FormInput = styled.input `
-
-`;
+    border: 1px solid #694E4E;
+    border-radius: 3px;
+    
+`; 
 
 
 export {LoginPageStyles, FormInput, InputControl, FormLabel, LoginPageForm, LoginPageContainer, LoginPageRight, LoginPageLeft};

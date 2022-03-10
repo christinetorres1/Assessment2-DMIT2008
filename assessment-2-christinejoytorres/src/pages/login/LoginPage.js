@@ -25,7 +25,7 @@ function LoginPage(props) {
         <>
             <LoginPageStyles> 
                 <LoginPageContainer>
-                    <LoginPageLeft bgImg="banner">
+                    <LoginPageLeft>
 
                         <h1>Chocolate store</h1>  
                         <p>Canada's chocolatier since 2022</p>
@@ -34,8 +34,9 @@ function LoginPage(props) {
                     </LoginPageLeft>
                     <LoginPageRight>
                         <LoginPageForm onSubmit={onSignInHandler}>
-
-                            <h2>Sign In</h2>
+ 
+                            <h2>Welcome!</h2>
+                            <p>Please Sign In.</p>
                             <InputControl>
                                 <FormLabel>Email</FormLabel>
                                 <FormInput type="Email" id="userEmail" name="userEmail"/>
