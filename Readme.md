@@ -1,1 +1,3 @@
-Assessment 2 - DMIT 2008
+# Chocolate Store
+
+By Christine Torres | Version 1.0.0
