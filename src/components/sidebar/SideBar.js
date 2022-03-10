@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 import { IoHomeSharp, IoBasketSharp, IoAlbumsSharp, IoMedalSharp, IoWalletOutline, IoThumbsUpOutline, IoOptionsOutline, IoReturnUpBackSharp, IoGiftSharp, IoBagCheckOutline, IoLogOutOutline, IoLogoBuffer } from "react-icons/io5";
 
-import {SideBarStyles, SideBarItems, SideBarItem, LogOut} from './styles'
+import {SideBarStyles, SideBarItems, SideBarItem} from './styles'
 
 function SideBar (props) {
     return (
