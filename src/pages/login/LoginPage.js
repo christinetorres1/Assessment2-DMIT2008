@@ -1,5 +1,7 @@
 import React from "react";
 
+import {auth} from './../../libs/firebase'
+
 import {useNavigate} from 'react-router-dom'
 import Button from "../../ui/button/Button";
 
@@ -9,6 +11,8 @@ import { LoginPageStyles, LoginPageContainer, FormInput, FormLabel, InputControl
 
 function LoginPage(props) {
     
+    console.log(auth);
+
     const nav = useNavigate();
 
     function onSignInHandler(e) {
