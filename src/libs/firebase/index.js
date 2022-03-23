@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database"
 import { getAuth } from "firebase/auth"
+import { getStorage } from "firebase/storage";
 
 // Set Up the Firebase Config with .env the Create React App Way.
 // This will have to be added to netlify.
@@ -20,5 +21,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase(app)
- 
-export {auth, db}
+ const storage = getStorage(app)
+
+
+export {auth, db, storage}
