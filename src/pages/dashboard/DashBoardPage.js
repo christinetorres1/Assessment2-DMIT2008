@@ -1,12 +1,16 @@
 import React,{ useState } from "react";
 
-import { AppBar } from "../../components/appbar";
-import MainContent from "../../components/maincontent/MainContent";
+
 
 import { onAuthStateChanged  } from "firebase/auth";
 import { auth } from "libs/firebase";
-import { useNavigate } from  'react-router-dom'
 
+import { Outlet, useNavigate } from  'react-router-dom';
+
+import { AppBar } from "../../components/appbar";
+import { SideBar } from "components/sidebar";
+
+import {DashBoardPageStyles} from "./styles"
 
 
 function DashBoardPage (props) {
@@ -28,7 +32,10 @@ function DashBoardPage (props) {
             return (
                 <>
                 <AppBar/>
-                <MainContent/>
+                <DashBoardPageStyles>
+                 <SideBar/>
+                <Outlet/>                   
+                </DashBoardPageStyles>
                 </>                
             )
 

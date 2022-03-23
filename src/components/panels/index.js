@@ -1,1 +1,2 @@
-export {default as Panels} from './Panels'
+export {default as AllProductsPanel} from './AllProductsPanel'
+export {default as AddProductsPanel} from './AddProductsPanel'
