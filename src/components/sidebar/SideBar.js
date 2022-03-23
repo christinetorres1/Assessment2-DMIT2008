@@ -4,7 +4,7 @@ import React from 'react'
 import { signOut } from 'firebase/auth'
 import { auth } from 'libs/firebase';
 
-import { IoHomeSharp, IoBasketSharp, IoAlbumsSharp, IoMedalSharp, IoWalletOutline, IoThumbsUpOutline, IoOptionsOutline, IoReturnUpBackSharp, IoGiftSharp, IoBagCheckOutline, IoLogOutOutline, IoLogoBuffer } from "react-icons/io5";
+import { IoHomeSharp, IoBasketSharp, IoAlbumsSharp, IoMedalSharp, IoWalletOutline, IoThumbsUpOutline, IoOptionsOutline, IoReturnUpBackSharp, IoGiftSharp, IoBagCheckOutline, IoLogoBuffer } from "react-icons/io5";
 
 import {SideBarStyles, SideBarItems, SideBarItem} from './styles'
 

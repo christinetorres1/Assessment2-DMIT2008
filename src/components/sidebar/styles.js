@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const SideBarStyles = styled.nav `
     box-shadow: 0 0 2px 1px grey;
     width: 20rem;
-    height: 100vh;
+    height: calc(100vh - 64px);
+    min-height: 800px;
     background-color: #FFEDDB;
     color: #694E4E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
