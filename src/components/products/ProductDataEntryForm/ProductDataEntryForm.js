@@ -1,33 +1,40 @@
 import React from "react";
 
-import { ProductDataEntryFormStyles, ProductImage, ProductName, ProductPrice, ProductDescription } from "./styles";
+import { ProductDataEntryFormStyles,ProductImage, ProductName, ProductPrice, ProductDescription } from "./styles";
 
-import {Label, Input, TextArea} from "ui/forms"
+import {Label, Input} from "ui/forms"
+
+import { TextArea } from "ui/forms/textarea";
 
 import { ProductImageDropBox} from "./../../products/ProductImageDropBox"
 
 function ProductDataEntryForm({ children, ...props }) {
   return (
     <ProductDataEntryFormStyles {...props}>
-      <ProductImage>
-        <Label>ProductImage</Label>
-        <ProductImageDropBox/>
-      </ProductImage>
 
-      <ProductName>
-        <Label>ProductName</Label>
-        <Input/>
-      </ProductName>
+        <ProductImage>
+                <Label>ProductImage</Label>
+                <ProductImageDropBox/>
+              </ProductImage>
 
-      <ProductPrice>
-      <Label>ProductPrice</Label>
-      <Input/>
-      </ProductPrice>
+              <fieldset>
+                <ProductName>
+                  <Label>ProductName</Label>
+                  <Input/>
+                </ProductName>
 
-      <ProductDescription>
-      <Label>ProductDescription</Label>
-      <TextArea/>
-      </ProductDescription>
+                <ProductPrice>
+                <Label>ProductPrice</Label>
+                <Input/>
+                </ProductPrice>        
+              </fieldset>
+
+
+              <ProductDescription>
+              <Label>ProductDescription</Label>
+              <TextArea/>
+              </ProductDescription>
+
 
     </ProductDataEntryFormStyles>
   );
