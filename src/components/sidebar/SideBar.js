@@ -1,11 +1,13 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
 
+import { MdDashboard } from "react-icons/md";
+
 import { signOut } from 'firebase/auth'
 import { auth } from 'libs/firebase';
 
 
-import {SideBarStyles, SideBarItems, SideBarItem} from './styles'
+import {SideBarStyles, SideBarItems} from './styles'
 
 import {Button} from './../../ui/button'
 import ProductOptions from './ProductOptions';
@@ -21,11 +23,17 @@ function SideBar (props) {
         
         <SideBarStyles>
             <SideBarItems>
+                <MdDashboard size="25px"/>
                 <h2>DashBoard</h2>
-                    <ProductOptions/>
-                    <Button onClick={onLogoutRequest} text="Log Out"/>
+                    
+                    
                 
             </SideBarItems>
+
+            <ProductOptions/>
+
+            <Button onClick={onLogoutRequest} text="Log Out"/>
+
         </SideBarStyles>
     )
 }

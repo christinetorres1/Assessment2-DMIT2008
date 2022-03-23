@@ -1,20 +1,25 @@
 import styled from 'styled-components';
 
-const SideBarStyles = styled.nav `
-    box-shadow: 0 0 2px 1px grey;
+const SideBarStyles = styled.aside `
+    box-shadow: 2px 0 4px -2px grey;
     width: 20rem;
     height: calc(100vh - 64px);
-    min-height: 800px;
     background-color: #FFEDDB;
     color: #694E4E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    padding: 2rem;
 `;
 
 const SideBarItems =styled.ul `
-    padding: 2rem;
-    list-style: none;
-
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    h2 {
+        font-size: 20px;
+    }
+    svg {
+        vertical-align: middle;
+    }
 
 `;
 
@@ -25,17 +30,5 @@ const SideBarItem = styled.li `
     }
 `;
 
-const LogOut = styled.li `
-    background-color: #694E4E;
-    color: #FFEDDB;
-    border-radius: 3px;
-    padding: 0.5rem;
-    width: 6rem;
-    margin-top: 2rem;
 
-    span {
-        padding-left: 0.5rem;
-    }
- `;
-
-export {SideBarStyles, SideBarItems, SideBarItem, LogOut}
+export {SideBarStyles, SideBarItems, SideBarItem}

@@ -6,6 +6,7 @@ const AppBarStyles   = styled.nav`
     background-color: #FFEDDB;
     color: #694E4E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.5rem;
 `;
 
 const AppBarItems = styled.ul`
