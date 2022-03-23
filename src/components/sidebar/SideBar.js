@@ -1,12 +1,24 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
+
+import { signOut } from 'firebase/auth'
+import { auth } from 'libs/firebase';
 
 import { IoHomeSharp, IoBasketSharp, IoAlbumsSharp, IoMedalSharp, IoWalletOutline, IoThumbsUpOutline, IoOptionsOutline, IoReturnUpBackSharp, IoGiftSharp, IoBagCheckOutline, IoLogOutOutline, IoLogoBuffer } from "react-icons/io5";
 
 import {SideBarStyles, SideBarItems, SideBarItem} from './styles'
 
+import {Button} from './../../ui/button'
+
 function SideBar (props) {
+    function onLogoutRequest (e) {
+        signOut(auth)
+
+        }
+
     return (
+
+        
         <SideBarStyles>
             <SideBarItems>
                
@@ -21,7 +33,7 @@ function SideBar (props) {
                     <SideBarItem><IoGiftSharp/><span>Gifts</span></SideBarItem>
                     <SideBarItem><IoBagCheckOutline/><span>Sales</span></SideBarItem>
                     <SideBarItem><IoLogoBuffer/><span>Custom</span></SideBarItem>
-                    <Link to="/"><IoLogOutOutline/><span> Log Out</span></Link>
+                    <Button onClick={onLogoutRequest} text="Log Out"/>
                 
             </SideBarItems>
         </SideBarStyles>
