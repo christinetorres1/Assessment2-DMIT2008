@@ -23,16 +23,16 @@ function PageNotFound (props) {
     return (
         <>
         <PageNotFoundStyles>
+           
             <PageNotFoundNotes>
+                    <h1>Chocolate Store</h1>
+                
                 <PageNotFoundNoteTitle>
-                    404 error: Page Not Found <IoSadOutline/>
+                    404 error: Page Not Found ! <IoSadOutline/>
                 </PageNotFoundNoteTitle>
 
-            </PageNotFoundNotes>
-
-            <PageNotFoundNotes>
                 {
-                    isUser? <Link to="/dashboard">back to safety</Link> : <Link to="/">back to safety</Link>
+                    isUser? <Link to="/dashboard">Take me back to safety</Link> : <Link to="/">Take me back to safety</Link>
                 }               
                 {/* <PageNotFoundNote>
                     Go back to <Link to="/">LogIn</Link> page.

@@ -8,6 +8,20 @@ const SideBarStyles = styled.aside `
     color: #694E4E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 2rem;
+
+    Button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 8rem;
+    border: 1px solid #694E4E;
+  }
+
+  Button:hover {
+    background-color: #FAEEE0;
+    color: #694E4E;
+    border: 1px solid #694E4E;
+    cursor: pointer;
+  }
 `;
 
 const SideBarItems =styled.ul `
@@ -16,6 +30,7 @@ const SideBarItems =styled.ul `
     gap: 0.25rem;
     h2 {
         font-size: 20px;
+        font-weight: bold;
     }
     svg {
         vertical-align: middle;

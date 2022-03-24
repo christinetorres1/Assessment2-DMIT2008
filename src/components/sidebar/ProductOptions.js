@@ -3,10 +3,16 @@ import React from 'react'
  import styled from 'styled-components';
 
 const ProductOptionStyles = styled.ul`
-    margin: 3rem 0 0;
+    margin: 1rem 1.5rem 6rem 1.7rem;
+    
+
     a{
-        font-size:14px;
+        color: #694E4E;
+        font-size:16px;
     }
+
+        
+    
 `;
 
  function ProductOptions  (props){
@@ -15,10 +21,13 @@ const ProductOptionStyles = styled.ul`
        
          <ProductOptionStyles>
              <li>
-                 <Link to="/dashboard">view all products</Link>
+                 <Link to="/dashboard">View all Products</Link>
              </li>
              <li>
-               <Link to="add">add new product</Link>
+               <Link to="add">Add Product</Link>
+             </li>
+             <li>
+             <Link to="update">Update Product</Link>
              </li>
          </ProductOptionStyles>
          </>

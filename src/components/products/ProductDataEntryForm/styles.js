@@ -15,6 +15,26 @@ const ProductDataEntryFormStyles = styled.form`
     margin-bottom: 1.5rem;
   }
   
+  Label {
+    font-size: 1rem;
+    color: #694E4E;
+  }
+
+  Button {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 10rem;
+    border: 1px solid #694E4E;
+  }
+
+  Button:hover {
+    background-color: #FAEEE0;
+    color: #694E4E;
+    border: 1px solid #694E4E;
+    cursor: pointer;
+  }
+
+
 `;
 
 
