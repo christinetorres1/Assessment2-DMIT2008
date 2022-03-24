@@ -14,6 +14,7 @@ const ProductDataEntryFormStyles = styled.form`
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
+  
 `;
 
 

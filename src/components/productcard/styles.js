@@ -33,7 +33,7 @@ const ProductPrice = styled.p `
 `;
 
 const ProductDescription = styled.p `
-  padding-top: 0.5rem;
+
   font-size: 14px;
 `
 
