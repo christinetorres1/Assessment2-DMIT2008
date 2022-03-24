@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const AppBarStyles   = styled.nav`
-    box-shadow:  0 0 2px 1px grey;
+    box-shadow:  0 0 3px 1px black;
     padding: 0.5rem 1rem;    
     background-color: #FFEDDB;
     color: #694E4E;
@@ -14,6 +14,7 @@ const AppBarItems = styled.ul`
    justify-content: space-between;
    align-items:center;
    list-style: none;
+
 `;
 
 const AppBarItem = styled.li`

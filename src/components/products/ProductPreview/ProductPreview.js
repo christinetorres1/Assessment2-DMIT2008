@@ -1,8 +1,7 @@
 import React from "react";
 
 
-import { ProductPreviewStyles } from "./styles";
-import { ProductName, ProductDescription, ProductPrice, ProductImage,  } from "../ProductDataEntryForm/styles";
+import { ProductPreviewStyles, ProductName, ProductDescription, ProductPrice, ProductImage,  } from "./styles";
 
 function ProductPreview({ children, productName, productPrice, productImage, productDescription, ...props }) {
   return (

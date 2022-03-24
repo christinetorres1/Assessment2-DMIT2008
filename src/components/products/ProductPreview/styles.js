@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 const ProductPreviewStyles = styled.aside`
- max-width:360px;
- align-self: stretch;
- padding: 3rem 2rem;
+  max-width:360px;
+  align-self: stretch;
+  padding: 3rem 2rem;
   background-color: #694E4E;
   color: #FFEDDB;
   border-radius: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 `;
 
 const ProductImage = styled.div`
@@ -17,12 +18,14 @@ const ProductImage = styled.div`
   img {
     width: 100%;
     height: auto;
+    padding-bottom: 1rem;
   }
 `;
 
-const ProductName = styled.h2`
+const ProductName = styled.div`
+
+  font-weight: bold;
   font-size: 2rem;
-  font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: -0.5px;
   word-wrap: break-word;

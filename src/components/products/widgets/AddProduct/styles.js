@@ -6,6 +6,8 @@ const AddProductStyles = styled.div`
     font-size: 1.75rem;
     color: #374151;
   }
+
+  margin-left: 10rem
 `;
 
 export { AddProductStyles };

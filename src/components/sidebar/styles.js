@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SideBarStyles = styled.aside `
-    box-shadow: 2px 0 4px -2px grey;
+    box-shadow: 2px 0 4px -2px #694E4E;
     width: 20rem;
     height: calc(100vh - 64px);
     background-color: #FFEDDB;
