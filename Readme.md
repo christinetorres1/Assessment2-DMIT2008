@@ -1,3 +1,3 @@
 # Chocolate Store
 
-By Christine Torres | Version 1.0.0
+By Christine Torres | Version 2.0.0
