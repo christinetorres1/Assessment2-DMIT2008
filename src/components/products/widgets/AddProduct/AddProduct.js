@@ -15,7 +15,7 @@ function AddProduct({ children, ...props }) {
   const [productPrice, setProductPrice] = useState('0.00')
   const [productImage, setProductImage] = useState({previewImage:ProductPreview, file:null})
   const [productDescription, setProductDescription] = useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus eros, dapibus ultricies lacus nec, suscipit dapibus est. Donec facilisis porttitor lacus, suscipit luctus urna pulvinar quis.')
-  const [loading, productLoader] = useAddNewProduct();
+  const [productLoader] = useAddNewProduct();
   const formatter = useNumberFormat()
 
   function handleProductName (name) {
