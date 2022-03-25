@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const PageNotFoundStyles = styled.body`
+const PageNotFoundStyles = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;

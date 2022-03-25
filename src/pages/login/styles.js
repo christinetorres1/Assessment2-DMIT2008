@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const LoginPageStyles = styled.body `
+const LoginPageStyles = styled.div `
     background-color: #694E4E;
     height: 100vh;
     color:  #694E4E;
