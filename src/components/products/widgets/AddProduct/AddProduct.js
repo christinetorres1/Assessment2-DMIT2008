@@ -5,7 +5,7 @@ import { useNumberFormat } from "hooks/useNumberFormat";
 import { ProductEditor } from "components/products/ProductEditor";
 import { AddProductStyles } from "./styles";
 import  ProductPreview  from "assets/images/dark-chocolate.jpg";
-
+import { EditorFeedBack } from "components/products/EditorFeedBack";
 import {useAddNewProduct} from 'hooks/useAddNewProduct'
 
 function AddProduct({ children, ...props }) {
@@ -15,7 +15,7 @@ function AddProduct({ children, ...props }) {
   const [productPrice, setProductPrice] = useState('0.00')
   const [productImage, setProductImage] = useState({previewImage:ProductPreview, file:null})
   const [productDescription, setProductDescription] = useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus eros, dapibus ultricies lacus nec, suscipit dapibus est. Donec facilisis porttitor lacus, suscipit luctus urna pulvinar quis.')
-  const [productLoader] = useAddNewProduct();
+  const [loading, productLoader] = useAddNewProduct();
   const formatter = useNumberFormat()
 
   function handleProductName (name) {
@@ -44,7 +44,7 @@ function AddProduct({ children, ...props }) {
   }
 
   if(isWriting) {
-    return <h1>Editor Feedback Component</h1>
+    return <EditorFeedBack status={loading} writeCompleted={setIsWriting}/>
   } else {
     return (
       <AddProductStyles {...props}>
