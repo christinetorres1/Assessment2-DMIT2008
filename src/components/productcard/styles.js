@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const ProductCardStyles = styled.div`
+const ProductCardStyles = styled.aside`
+  width: 200px;
+  align-self: stretch;
   margin: 0.75rem;
   padding: 0.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,8 +17,8 @@ const ProductImage = styled.div`
   width: 100%;
 
   img {
-    width: 100%;
-    height: 160px;
+    /* width: 100%; */
+    height: 200px;
     padding-bottom: 1rem;
 
 

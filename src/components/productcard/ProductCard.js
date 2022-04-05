@@ -1,19 +1,19 @@
 import { ProductCardStyles, ProductDescription, ProductImage, ProductName, ProductPrice } from "./styles";
 import React from "react";
 
-import placeholderImage from "./../../assets/images/dark-chocolate.jpg"
 
-
-function ProductCard({ children, ...props }) {
+function ProductCard({ children, product, ...props }) {
   
+  const {productName, productPrice, imageURL, productDescription} = {...product}
+
   return (
     <ProductCardStyles {...props}>
       <ProductImage>
-        <img src={placeholderImage} alt="chocolate"/>
+        <img src={imageURL} alt="chocolate" width="320" height="320"/>
       </ProductImage>
-      <ProductName>Chocolate Name</ProductName>
-      <ProductPrice>$0.00</ProductPrice>
-      <ProductDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor ut sollicitudin ac, hendrerit nec mi. </ProductDescription>
+      <ProductName>{productName}</ProductName>
+    <ProductPrice>{productPrice}</ProductPrice>
+      <ProductDescription>{productDescription}</ProductDescription>
     </ProductCardStyles>
   );
 }

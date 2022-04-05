@@ -26,9 +26,9 @@ const ProductOptionStyles = styled.ul`
              <li>
                <Link to="add">Add Product</Link>
              </li>
-             <li>
+             {/* <li>
              <Link to="update">Update Product</Link>
-             </li>
+             </li> */}
          </ProductOptionStyles>
          </>
      )
